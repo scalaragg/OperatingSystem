@@ -6,32 +6,23 @@
 
 ### Показ списка задач
 import tkinter as tk
+
+from python.TM.src.ui.interface import Interface
 from storage import  load_tasks, save_tasks
 from config import NAME_FILE_SAVES
 collections = load_tasks([],NAME_FILE_SAVES)
+ui = Interface()
 
 def main():
     show_all_tasks()
 
 def show_all_tasks():
-    frame_menu.pack_forget()
-    frame_tasks.pack()
-    tasks = tk.Listbox(frame_tasks)
+        for number, content in enumerate(collection):
+            print(number, content)
+            ui.list_task.add_to_list(content["name"])
 
-    for number, content in enumerate(collection):
-        word = ''
-        for symbol in content:
-            if symbol != '|':
-                word =f'{word}{symbol}'
-            else:
-                break
-    tasks.insert(tk.END, word)
-    tasks.pack()
-
-def create_menu():
-    frame_menu.pack_forget()
-    frame_menu.pack()
-
+def show_details():
+    pass
 
 main()
 create_menu()
