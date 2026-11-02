@@ -1,56 +1,26 @@
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
-*.py[codz]
-*$py.class
+*.py[cod]
 
-# C extensions
-*.so
+# Virtual environments
+.venv/
+venv/
 
-# Distribution / packaging
-.Python
+# IDE
+.idea/
+.vscode/
+
+# Build artifacts
 build/
-develop-eggs/
 dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# PyInstaller
-#   Usually these files are written by a python script from a template
-#   before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
 *.spec
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py.cover
-.hypothesis/
+# Test and coverage
 .pytest_cache/
-cover/
+.coverage
+htmlcov/
 
+<<<<<<< Updated upstream:python/TM/src/.gitignore
 # Translations
 *.mo
 *.pot
@@ -150,7 +120,7 @@ activemq-data/
 # Environments
 .env
 .envrc
-.venv
+../.venv
 env/
 venv/
 ENV/
@@ -216,3 +186,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+=======
+# OS files
+.DS_Store
+Thumbs.db
+>>>>>>> Stashed changes:.gitignore
