@@ -5,29 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="405b0256-47d4-489c-bd84-6fe6834dc7ce" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/TM/documets/BACKLOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/python/TM/documets/BACKLOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/TM/src/saves.json" beforeDir="false" afterPath="$PROJECT_DIR$/python/TM/saves.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/TM/src/ui/interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/TM/src/ui/interface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/TM/src/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/TM/src/view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/conn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/TM/src/ui/Listbox.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/file.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/os.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/processes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saves.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/Frame.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/interface.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/.idea/Python-project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/.idea/PythonProject2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/.idea/Pyton-project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/.idea/rizzspatau.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/assets/icon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/console_build/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/console_build/file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/console_build/os.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/console_build/processes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/documets/BACKLOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/documets/BUGFIX.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/documets/INSTALL.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/documets/TEMP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/saves.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/core.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/storage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/ui/Button.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/ui/Frame.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/ui/Listbox.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/ui/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/ui/interface.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rizzsaptau.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rizzsaptau.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_Manadger/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Task_Manadger/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/TM/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/python/TM/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/TM/.idea/Pyton-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/python/TM/.idea/Pyton-project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/TM/src/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/python/TM/src/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,34 +70,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.app.executor&quot;: &quot;Run&quot;,
-    &quot;Python.calclacla.executor&quot;: &quot;Run&quot;,
-    &quot;Python.conn.executor&quot;: &quot;Run&quot;,
-    &quot;Python.file.executor&quot;: &quot;Run&quot;,
-    &quot;Python.interface.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.processes.executor&quot;: &quot;Run&quot;,
-    &quot;Python.utils.executor&quot;: &quot;Run&quot;,
-    &quot;Python.view.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;0.1.0---version__with__console__build&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/SQL2022/rizzsaptau&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.app.executor": "Run",
+    "Python.calclacla.executor": "Run",
+    "Python.conn.executor": "Run",
+    "Python.file.executor": "Run",
+    "Python.interface.executor": "Run",
+    "Python.main (1).executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.processes.executor": "Run",
+    "Python.utils.executor": "Run",
+    "Python.view.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "0.1.0---version__with__console__build",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/COllegde/Pyton-project/Task_Manadger",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\COllegde\Pyton-project\Task_Manadger" />
+      <recent name="D:\COllegde\Pyton-project\Task_Manadger\src" />
+      <recent name="D:\COllegde\Pyton-project\Task_Manadger\src\ui" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\SQL2022\rizzsaptau\python\TM" />
       <recent name="C:\SQL2022\rizzsaptau\python\TM\src" />
