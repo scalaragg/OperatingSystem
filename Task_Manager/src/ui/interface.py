@@ -1,108 +1,123 @@
-"""Главное окно графического приложения Task Manager."""
+"""Tkinter-прослойка приложения."""
 import tkinter as tk
-from pathlib import Path
+from tkinter import messagebox
+
+from task_manager import TaskManager
 
 from .AppButton import AppButton
+from .AppEntry import AppEntry
 from .AppLabel import AppLabel
 from .AppListbox import AppListbox
-from .Frame import AppFrame
-from config import NAME_FILE_SAVES
-from storage import load_tasks
-from view import show_tasks
 
 
 class Interface:
-    def __init__(self, window_w=500, window_h=420):
+    def __init__(self, manager: TaskManager):
+        self.manager = manager
+        self.manager.interface = self
         self.root = tk.Tk()
         self.root.title("Task Manager")
-        self.root.geometry(f"{window_w}x{window_h}")
-        self.root.minsize(360, 300)
-        self.root_w = window_w
-        self.root_h = window_h
+        self.root.geometry("650x520")
+        self.root.minsize(500, 420)
 
-        icon_path = Path(NAME_FILE_SAVES).parent / "assets" / "icon.ico"
-        if icon_path.exists():
-            try:
-                self.root.iconbitmap(str(icon_path))
-            except tk.TclError:
-                pass
+        self.title_entry = None
+        self.description_entry = None
+        self.author_entry = None
+        self.task_list = None
+        self.status_label = None
 
-        self.frames = {}
-        self.buttons = []
-        self.list_task = None
-        self.create_interface()
+    def build(self):
+        main = tk.Frame(self.root, padx=12, pady=12)
+        main.pack(fill="both", expand=True)
 
-    def create_interface(self):
-        self.create_frames(["menu", "tasks"])
-        self.create_buttons()
-        self.add_listbox("tasks")
-        self.frames["menu"].hide(False)
-        self.frames["tasks"].hide(True)
+        AppLabel(main, "Менеджер задач",
+                 font=("Arial", 20, "bold"))
 
-    def create_frames(self, names):
-        for name, color in zip(names, ("#20232b", "#20232b")):
-            self.frames[name] = AppFrame(
-                self.root, color, self.root_w, self.root_h
-            )
+        form = tk.Frame(main)
+        form.pack(fill="x")
 
-    def create_buttons(self):
-        AppLabel(
-            self.frames["menu"],
-            "Task Manager",
-            font=("Arial", 22, "bold"),
-            bg="#20232b",
-            fg="white",
-        )
-        AppLabel(
-            self.frames["menu"],
-            "Ваш список задач в одном месте",
-            font=("Arial", 11),
-            bg="#20232b",
-            fg="#d6d9e0",
-        )
-        self.buttons.append(AppButton(
-            self.frames["menu"],
-            text="Посмотреть все задачи",
-            command=self.show_tasks,
-            width=25,
-            height=2,
-        ))
+        tk.Label(form, text="Название:").pack(anchor="w")
+        self.title_entry = AppEntry(form)
 
-        AppLabel(
-            self.frames["tasks"],
-            "Мои задачи",
-            font=("Arial", 18, "bold"),
-            bg="#20232b",
-            fg="white",
-        )
-        self.buttons.append(AppButton(
-            self.frames["tasks"],
-            text="Обновить список",
-            command=self.show_all_tasks,
-        ))
-        self.buttons.append(AppButton(
-            self.frames["tasks"],
-            text="Вернуться в меню",
-            command=lambda: self.command_quit("tasks", True),
-        ))
+        tk.Label(form, text="Описание:").pack(anchor="w")
+        self.description_entry = AppEntry(form)
 
-    def add_listbox(self, name_frame):
-        self.list_task = AppListbox(self.frames[name_frame])
+        tk.Label(form, text="Автор:").pack(anchor="w")
+        self.author_entry = AppEntry(form)
+
+        buttons = tk.Frame(main)
+        buttons.pack(fill="x", pady=5)
+
+        AppButton(buttons, "Добавить", self.create_task)
+        AppButton(buttons, "Изменить", self.edit_task)
+        AppButton(buttons, "Удалить", self.delete_task)
+        AppButton(buttons, "Статус", self.toggle_status)
+        AppButton(buttons, "Обновить", self.show_tasks)
+
+        self.task_list = AppListbox(main)
+        self.status_label = tk.Label(main, text="", anchor="w")
+        self.status_label.pack(fill="x", padx=10, pady=3)
+
+    def get_input(self):
+        return {
+            "title": self.title_entry.get_input(),
+            "description": self.description_entry.get_input(),
+            "author": self.author_entry.get_input(),
+        }
+
+    def ask_confirm(self, message: str) -> bool:
+        return messagebox.askyesno("Подтверждение", message)
 
     def show_tasks(self):
-        self.command_quit("menu", True)
-        self.show_all_tasks()
+        tasks = self.manager.storage.load()
+        self.task_list.show_tasks(tasks)
+        self.status_label.config(text=f"Задач: {len(tasks)}")
 
-    def show_all_tasks(self):
-        tasks = load_tasks(NAME_FILE_SAVES)
-        show_tasks(tasks, self.list_task)
+    def _selected_id(self):
+        task_id = self.task_list.get_selected_id()
+        if task_id is None:
+            messagebox.showwarning("Задача", "Сначала выберите задачу.")
+        return task_id
 
-    def command_quit(self, name_frame, flag):
-        if not flag:
+    def create_task(self):
+        try:
+            data = self.get_input()
+            self.manager.create_task(**data)
+            self._clear_inputs()
+            self.show_tasks()
+        except ValueError as error:
+            messagebox.showerror("Ошибка", str(error))
+
+    def edit_task(self):
+        task_id = self._selected_id()
+        if task_id is None:
             return
-        if name_frame == "menu":
-            self.frames["menu"].hide(True)
-            self.frames["tasks"].hide(False)
-        elif name_frame == "tasks":
-            self.frames["tasks"].hide(True)
-            self.frames["menu"].hide(False)
+        try:
+            self.manager.edit_task(task_id, **self.get_input())
+            self.show_tasks()
+        except ValueError as error:
+            messagebox.showerror("Ошибка", str(error))
+
+    def delete_task(self):
+        task_id = self._selected_id()
+        if task_id is None:
+            return
+        if self.ask_confirm("Удалить выбранную задачу?"):
+            try:
+                self.manager.delete_task(task_id)
+                self.show_tasks()
+            except ValueError as error:
+                messagebox.showerror("Ошибка", str(error))
+
+    def toggle_status(self):
+        task_id = self._selected_id()
+        if task_id is None:
+            return
+        try:
+            self.manager.toggle_status(task_id)
+            self.show_tasks()
+        except ValueError as error:
+            messagebox.showerror("Ошибка", str(error))
+
+    def _clear_inputs(self):
+        for entry in (self.title_entry, self.description_entry, self.author_entry):
+            entry.delete(0, tk.END)

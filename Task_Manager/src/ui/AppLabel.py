@@ -3,10 +3,8 @@ import tkinter as tk
 
 
 class AppLabel(tk.Label):
-    def __init__(
-        self, master, text, font=("Arial", 12), bg=None, fg=None,
-        anchor="center", **kwargs
-    ):
+    def __init__(self, master, text, font=("Arial", 12), bg=None, fg=None,
+                 anchor="center", **kwargs):
         options = {"text": text, "font": font, "anchor": anchor}
         if bg is not None:
             options["bg"] = bg

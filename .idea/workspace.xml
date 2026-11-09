@@ -5,49 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="405b0256-47d4-489c-bd84-6fe6834dc7ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/.idea/Python-project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/.idea/PythonProject2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/.idea/Pyton-project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/.idea/rizzspatau.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/assets/icon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/console_build/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/console_build/file.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/console_build/os.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/console_build/processes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/documets/BACKLOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/documets/BUGFIX.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/documets/INSTALL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/documets/TEMP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/saves.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/core.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/storage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/ui/Button.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/ui/Frame.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/ui/Listbox.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/ui/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/ui/interface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_Manadger/src/view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/rizzsaptau.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rizzsaptau.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_Manadger/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Task_Manadger/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/TM/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/python/TM/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/TM/.idea/Pyton-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/python/TM/.idea/Pyton-project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/TM/src/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/python/TM/src/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manager/src/storage_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manager/src/task.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manager/src/task_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_Manager/src/ui/AppEntry.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_Manager/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_Manager/.idea/Python-project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_Manager/.idea/PythonProject2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_Manager/.idea/Pyton-project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_Manager/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_Manager/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_Manager/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_Manager/.idea/rizzspatau.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_Manager/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_Manager/documets/BACKLOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/Task_Manager/documets/BACKLOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_Manager/documets/BUGFIX.md" beforeDir="false" afterPath="$PROJECT_DIR$/Task_Manager/documets/BUGFIX.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_Manager/saves.json" beforeDir="false" afterPath="$PROJECT_DIR$/Task_Manager/saves.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_Manager/src/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Task_Manager/src/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_Manager/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Task_Manager/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_Manager/src/ui/AppButton.py" beforeDir="false" afterPath="$PROJECT_DIR$/Task_Manager/src/ui/AppButton.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_Manager/src/ui/AppLabel.py" beforeDir="false" afterPath="$PROJECT_DIR$/Task_Manager/src/ui/AppLabel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_Manager/src/ui/AppListbox.py" beforeDir="false" afterPath="$PROJECT_DIR$/Task_Manager/src/ui/AppListbox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_Manager/src/ui/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Task_Manager/src/ui/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_Manager/src/ui/interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/Task_Manager/src/ui/interface.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="35" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -58,6 +48,69 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.000000000001796" />
+      <entry key="S10" value="1.0000013405912576" />
+      <entry key="S30" value="1.0163496195529473" />
+      <entry key="S60" value="1.4192394686978784" />
+      <entry key="M2" value="3.887884830432431" />
+      <entry key="M5" value="12.59574285318495" />
+      <entry key="M10" value="22.203322751568535" />
+      <entry key="M15" value="27.72790613756781" />
+      <entry key="M30" value="35.328140463881304" />
+      <entry key="H1" value="40.199716110344404" />
+      <entry key="H2" value="42.97170577532465" />
+      <entry key="H4" value="44.45215858091058" />
+      <entry key="D1" value="45.73719856707" />
+      <entry key="W1" value="45.962336720672305" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.7169776240079136" />
+      <entry key="MS500" value="0.9356234978314001" />
+      <entry key="S2" value="0.9835020740262483" />
+      <entry key="S5" value="0.9933678773183987" />
+      <entry key="S10" value="0.9966797617885005" />
+      <entry key="S30" value="1.015237646411684" />
+      <entry key="S60" value="1.4186219955394392" />
+      <entry key="M2" value="3.8869351818212876" />
+      <entry key="M5" value="12.592090774263939" />
+      <entry key="M10" value="22.198256747301095" />
+      <entry key="M15" value="27.723045504470047" />
+      <entry key="M30" value="35.32460458603474" />
+      <entry key="H1" value="40.19757537822081" />
+      <entry key="H2" value="42.97052685736155" />
+      <entry key="H4" value="44.45153981241657" />
+      <entry key="D1" value="45.73709117085558" />
+      <entry key="W1" value="45.96232127116393" />
+    </decayedShown>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -72,7 +125,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.__init__.executor": "Run",
     "Python.app.executor": "Run",
     "Python.calclacla.executor": "Run",
     "Python.conn.executor": "Run",
@@ -83,14 +138,18 @@
     "Python.processes.executor": "Run",
     "Python.utils.executor": "Run",
     "Python.view.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "0.1.0---version__with__console__build",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "Task__manadger",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/COllegde/Pyton-project/Task_Manadger",
+    "last_opened_file_path": "D:/COllegde/Pyton-project/Task_Manager",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
@@ -99,6 +158,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\COllegde\Pyton-project\Task_Manager" />
+      <recent name="D:\COllegde\Pyton-project" />
       <recent name="D:\COllegde\Pyton-project\Task_Manadger" />
       <recent name="D:\COllegde\Pyton-project\Task_Manadger\src" />
       <recent name="D:\COllegde\Pyton-project\Task_Manadger\src\ui" />
@@ -111,7 +172,7 @@
       <recent name="C:\Users\Академия\Documents\rizzspatau\python\TM" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="project" />
       <option name="ENV_FILES" value="" />
@@ -121,13 +182,14 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="~\PycharmProjects\WelcomeScreen\.venv" />
       <option name="WORKING_DIRECTORY" value="C:\SQL2022\rizzsaptau\python\TM" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="true" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="C:\SQL2022\rizzsaptau\python\TM\src\main.py" />
+      <option name="SCRIPT_NAME" value="C:/SQL2022/rizzsaptau/python/TM/src/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -197,7 +259,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-e0ed3721d81e-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.159" />
+        <option value="bundled-python-sdk-ebb3072d7bdf-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.11879.98" />
       </set>
     </attachedChunks>
   </component>

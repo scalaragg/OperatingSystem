@@ -1,4 +1,4 @@
-"""Список задач с методами добавления, очистки и обновления."""
+"""Собственный Listbox для отображения задач."""
 import tkinter as tk
 
 
@@ -6,30 +6,30 @@ class AppListbox(tk.Listbox):
     def __init__(self, master, **kwargs):
         super().__init__(
             master,
-            activestyle="dotbox",
             font=("Arial", 11),
             selectmode=tk.SINGLE,
+            activestyle="dotbox",
             **kwargs,
         )
-        self.pack(fill="both", expand=True, padx=12, pady=10)
-
-    def add_to_list(self, content):
-        self.insert(tk.END, content)
-
-    def delete_list(self):
-        self.delete(0, tk.END)
+        self.pack(fill="both", expand=True, padx=10, pady=10)
 
     def show_tasks(self, tasks):
-        self.delete_list()
-        if not tasks:
-            self.add_to_list("Список задач пока пуст.")
-            return
+        self.delete(0, tk.END)
+        for task in tasks:
+            status = "✓" if task.status else "○"
+            text = f"{task.id}. {status} {task.title}"
+            if task.description:
+                text += f" — {task.description}"
+            if task.author:
+                text += f" [{task.author}]"
+            self.insert(tk.END, text)
 
-        for number, task in enumerate(tasks, start=1):
-            title = task.get("title", "Без названия")
-            description = task.get("description", "")
-            status = "✓" if task.get("completed", False) else "○"
-            line = f"{number}. {status} {title}"
-            if description:
-                line += f" — {description}"
-            self.add_to_list(line)
+    def get_selected_id(self):
+        selection = self.curselection()
+        if not selection:
+            return None
+        value = self.get(selection[0])
+        try:
+            return int(value.split(".", 1)[0])
+        except (ValueError, IndexError):
+            return None
